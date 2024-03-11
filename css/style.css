@@ -1,0 +1,356 @@
+:root {
+    --greyH2: #B8B8B8;
+    --greyNav: #6D6D6D;
+    --background: #D9D9D9;
+    --zapolnitel: #ffff;
+    --title-color: #000000;
+}
+
+a,
+a:visited {
+    color: var(--greyNav);
+}
+
+li>a:hover {
+    color: #4e4b4b;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+
+body {
+    background-color: var(--background);
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--zapolnitel);
+    height: 72px;
+    z-index: 999;
+}
+
+.navigation h2 {
+    font-size: 40px;
+    color: var(--greyH2);
+    font-weight: 500;
+}
+
+a:has(h2):hover {
+    text-decoration: none;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    color: var(--greyNav);
+    font-size: 24px;
+    z-index: 999;
+}
+
+/*! Main */
+h3 {
+    color: var(--title-color);
+    font-size: 60px;
+    font-weight: 500;
+
+}
+
+.wrapper {
+    width: 80vw;
+    position: relative;
+    z-index: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*? Top-ban */
+.top-ban {
+    margin-top: 20px;
+    width: 78%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.top-ban__content {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+
+}
+
+.top-ban__title {
+    color: black;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.top-ban__subtitle {
+    font-size: 40px;
+}
+
+.top-ban img {
+    border-radius: 15px;
+}
+
+.top-ban__button-place {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.top-ban button {
+    background-color: var(--zapolnitel);
+    border: 1px solid #F4F4F4;
+    width: 260px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.top-ban button:hover {
+    transition: 0.2s;
+    background-color: var(--greyH2);
+    /*? color: var(--zapolnitel);  НАДА ЧИ НЕ?  */
+}
+
+/*? о нас */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about p {
+    width: 80%;
+    margin: 0 10%;
+    padding: 6% 3%;
+
+}
+
+.container {
+    background-color: var(--zapolnitel);
+    font-size: 24px;
+    font-weight: 400;
+    width: 65%;
+    height: 60%;
+    max-width: 80%;
+    margin: 10px 10%;
+    border-radius: 10px;
+    line-height: calc(24px + 4px);
+
+}
+
+.about .container {
+    width: 69%;
+}
+
+.main__title {
+    margin: 21px 0 33px 0;
+}
+
+/*? Комнаты */
+.rooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rooms .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 6px;
+    padding: 12px;
+    width: 68%;
+}
+
+.rooms__content {
+    padding: 10% 3% 0 20%;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+}
+
+.rooms__preview {
+    grid-column: 2;
+    grid-row: 1/span 2;
+}
+
+.rooms h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.rooms__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.rooms__show {
+    justify-self: center;
+    align-self: flex-end;
+    font-weight: 800;
+}
+
+.rooms__show button {
+    background-color: var(--background);
+    border: 1px solid #F4F4F4;
+    padding: 30px 115px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.rooms__show button:hover {
+    background-color: var(--greyH2);
+}
+
+/* ?Спецпредложения */
+.specEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.specEvent .main__title {
+    font-weight: 500;
+}
+
+.slider__specEvent {}
+
+.sliderButton {}
+
+.left {}
+
+.specEvent>img {
+    border-radius: 100px;
+}
+
+.specEvent a:hover {
+    transition: 0.1s;
+    backdrop-filter: brightness(0.4);
+    border-radius: 100px;
+
+}
+
+.right {
+    rotate: 180deg;
+}
+
+.specEvent .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 400px;
+
+
+}
+
+.slider-contnents__specEvent {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider-element__specEvent {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    grid-column: 2;
+}
+
+.subTitle__specEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*? Как Добраться? */
+.way {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.waypoint {
+    text-transform: uppercase;
+    padding: 4%;
+    font-size: 24px;
+}
+
+.way .container {
+    width: 70%;
+}
+
+.map
+
+/*? Footer */
+footer,.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+table {
+    border-spacing: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+
+}
+
+tr {
+    text-transform: uppercase;
+}
+
+td>p {
+    text-transform: none;
+    text-align: right;
+}
+
+/* @media {} */
