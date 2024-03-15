@@ -460,7 +460,7 @@ td>p {
         justify-content: start;
         align-items: center;
         width: 80vw;
-        height: 75vh;
+        height: 100vh;
         grid-template-rows: 0.5fr 1fr 3fr 1fr;
 
         align-items: center;
@@ -527,22 +527,146 @@ td>p {
 
     .wrapper {
         width: 100vw;
+        height: 100%;
+
         .container {
             width: 100%;
             margin: 10px 0;
             font-size: 18px;
         }
-        p{
+
+        p {
             /* padding: 0; */
             margin: 0;
         }
-        h3{
+
+        h3 {
             font-size: 40px;
             font-weight: 540;
         }
-        
+
     }
-    .rooms__show button{
-        width: 10px !important;
+    .about{
+        margin: 9;
+    }
+    .rooms__show {
+        width: 100%;
+        justify-self: left;
+
+        button {
+            text-align: center;
+            width: 100%;
+            padding: 15px;
+        }
+
+    }
+
+    .rooms {
+        .container {
+            background-image: url(../img/room.jpg);
+            background-size: cover;
+            color: var(--zapolnitel);
+            grid-template-rows: 4fr 1fr;
+            grid-template-columns: 1fr;
+        }
+
+        .rooms__content {
+            padding: 0;
+
+        }
+
+        .rooms__subtitle {
+            font-size: 15px;
+            align-self: center;
+        }
+
+        .rooms__title h3 {
+            font-size: 40px;
+            color: var(--zapolnitel);
+        }
+
+        .rooms__title {
+            align-self: center;
+        }
+
+        .rooms__preview {
+            display: none;
+        }
+    }
+
+    .way {
+        width: 100%;
+        height: 22vh;
+        margin: 0;
+
+        .main__title {
+            display: flex;
+            height: 7vh !important;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 6fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+        }
+
+        .waypoint {
+            text-align: center;
+        }
+
+        .map-mobile {
+            justify-self: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5px;
+
+            button {
+                width: 90%;
+                height: 87%;
+                border-radius: 5px;
+            }
+        }
+
+        .map {
+            display: none;
+        }
+    }
+
+    footer {
+        width: 100%;
+
+        .footer {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .info {
+            width: 100%;
+        }
+
+        td {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        tbody {}
+
+        table {
+            border-spacing: 0px;
+            padding: 5px;
+            margin: 0 0 10px 0
+        }
+        ;
+
     }
 }
