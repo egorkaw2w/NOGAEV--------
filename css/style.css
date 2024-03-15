@@ -362,4 +362,311 @@ td>p {
     text-align: right;
 }
 
-/* @media {} */
+/*! Media  */
+/* TODO Надо сделать))) */
+@media (min-width: 1800px) {
+    header {
+        width: 100vw;
+    }
+
+    .top-ban__img-mobile {
+        display: none;
+    }
+
+}
+
+@media (max-width:1500px) {
+    header {
+        margin: 0;
+        width: 1500px;
+    }
+
+    .navigation {
+        margin: 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        color: var(--greyNav);
+        z-index: 999;
+    }
+
+    li {
+        font-size: 24px;
+    }
+}
+
+@media(min-width:150px) and (max-width:600px) {
+    header {
+        width: 100%;
+    }
+
+    .navigation a img {
+        display: block;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    li a {
+        display: none
+    }
+
+    ul {
+        display: grid !important;
+        width: 100% !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        justify-items: center;
+
+    }
+
+    li a:has(h2),
+    li a:has(img) {
+        display: flex;
+
+
+    }
+
+    .top-ban img {
+        display: none
+    }
+
+    ;
+
+    .about .container {
+        width: 70%;
+    }
+
+    .navigation h2 {
+        font-size: 25px;
+    }
+
+    .top-ban__title {
+        font-size: 45px;
+        height: 10vh;
+        width: 95vw;
+    }
+
+    .top-ban__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 80vw;
+        height: 100vh;
+        grid-template-rows: 0.5fr 1fr 3fr 1fr;
+
+        align-items: center;
+    }
+
+    .top-ban {
+        margin: 0 10%;
+        width: 80vw;
+    }
+
+    .top-ban__subtitle {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .top-ban__button-place {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 75vw;
+        height: 10vh;
+        justify-content: center;
+        margin-top: 5vw;
+    }
+
+    .top-ban button {
+        width: 95vw;
+        height: 10vh;
+        font-size: 15px;
+    }
+
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .top-ban__subtitle {
+        width: 95vw;
+    }
+
+    .top-ban__img-mobile img {
+        display: block;
+        border-radius: 5px;
+        width: 100vw;
+        height: 100%;
+        margin-bottom: 5vw;
+    }
+
+    .specEvent {
+        display: none;
+    }
+
+    .rooms button {
+        width: 10vw;
+    }
+
+    .about {
+        margin-top: 20vw;
+    }
+
+    .top-ban__img-mobile {
+        display: block;
+        height: 60%;
+    }
+
+    .wrapper {
+        width: 100vw;
+        height: 100%;
+
+        .container {
+            width: 100%;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        p {
+            /* padding: 0; */
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: 540;
+        }
+
+    }
+    .about{
+        margin: 9;
+    }
+    .rooms__show {
+        width: 100%;
+        justify-self: left;
+
+        button {
+            text-align: center;
+            width: 100%;
+            padding: 15px;
+        }
+
+    }
+
+    .rooms {
+        .container {
+            background-image: url(../img/room.jpg);
+            background-size: cover;
+            color: var(--zapolnitel);
+            grid-template-rows: 4fr 1fr;
+            grid-template-columns: 1fr;
+        }
+
+        .rooms__content {
+            padding: 0;
+
+        }
+
+        .rooms__subtitle {
+            font-size: 15px;
+            align-self: center;
+        }
+
+        .rooms__title h3 {
+            font-size: 40px;
+            color: var(--zapolnitel);
+        }
+
+        .rooms__title {
+            align-self: center;
+        }
+
+        .rooms__preview {
+            display: none;
+        }
+    }
+
+    .way {
+        width: 100%;
+        height: 22vh;
+        margin: 0;
+
+        .main__title {
+            display: flex;
+            height: 7vh !important;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 6fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+        }
+
+        .waypoint {
+            text-align: center;
+        }
+
+        .map-mobile {
+            justify-self: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5px;
+
+            button {
+                width: 90%;
+                height: 87%;
+                border-radius: 5px;
+            }
+        }
+
+        .map {
+            display: none;
+        }
+    }
+
+    footer {
+        width: 100%;
+
+        .footer {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .info {
+            width: 100%;
+        }
+
+        td {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        tbody {}
+
+        table {
+            border-spacing: 0px;
+            padding: 5px;
+            margin: 0 0 10px 0
+        }
+        ;
+
+    }
+}
