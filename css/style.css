@@ -63,6 +63,14 @@ a:has(h2):hover {
     z-index: 999;
 }
 
+.navigation a img {
+    display: none;
+}
+
+.top-ban__img-mobile {
+    display: none;
+}
+
 /*! Main */
 h3 {
     color: var(--title-color);
@@ -320,7 +328,8 @@ main {
 .map
 
 /*? Footer */
-footer,.footer {
+footer,
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,48 +365,160 @@ td>p {
 /*! Media  */
 /* TODO Надо сделать))) */
 @media (min-width: 1800px) {
-header{
-    width: 100vw;
-}
+    header {
+        width: 100vw;
+    }
+
+    .top-ban__img-mobile {
+        display: none;
+    }
 
 }
-@media  (max-width:1500px) {
-    header{
+
+@media (max-width:1500px) {
+    header {
         margin: 0;
         width: 1500px;
     }
-    .navigation{
+
+    .navigation {
         margin: 0;
     }
+
     .navigation ul {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
-        margin: 0 ;
+        margin: 0;
         font-family: "Rubik", sans-serif;
         font-weight: 500;
         color: var(--greyNav);
         z-index: 999;
     }
-    li{
+
+    li {
         font-size: 24px;
     }
 }
-/* @media(min-width:150px)and (max-width:400px) {
-    header
-    {
-        width: 100vw;
-    }
-    .navigation{
-        width: 100vw;
-    }
-    li{
-        font-size: 2vw;
-    }
-    .top-ban img{
-        width: 60vw;
-        height: 30vh
-    };
 
-} */
+@media(min-width:150px) and (max-width:600px) {
+    header {
+        width: 100%;
+    }
+
+    .navigation a img {
+        display: block;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    li a {
+        display: none
+    }
+
+    ul {
+        display: grid !important;
+        width: 100% !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        justify-items: center;
+
+    }
+
+    li a:has(h2),
+    li a:has(img) {
+        display: flex;
+
+
+    }
+
+    .top-ban img {
+        display: none
+    }
+
+    ;
+
+    .about .container {
+        width: 70%;
+    }
+
+    .navigation h2 {
+        font-size: 25px;
+    }
+
+    .top-ban__title {
+        font-size: 45px;
+        height: 10vh;
+        width: 95vw;
+    }
+
+    .top-ban__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 80vw;
+        height: 75vh;
+        grid-template-rows: 0.5fr 1fr 3fr 1fr;
+
+        align-items: center;
+    }
+
+    .top-ban {
+        margin: 0 10%;
+        width: 80vw;
+    }
+
+    .top-ban__subtitle {
+        font-size: 25px;
+        text-align: left;
+    }
+    .top-ban__button-place {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 75vw;
+        height: 10vh;
+        justify-content: center;
+        margin-top: 5vw;
+    }
+
+    .top-ban button {
+        width: 95vw;
+        height: 10vh;
+        font-size: 15px;
+    }
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+    .top-ban__subtitle {
+        width: 95vw;
+    }
+
+    .top-ban__img-mobile img {
+        display: block;
+        border-radius: 5px;
+        width: 100vw;
+        height: 100%;
+        margin-bottom: 5vw;
+    }
+
+    .specEvent {
+        display: none;
+    }
+
+    .rooms button {
+        width: 10vw;
+    }
+
+    .about {
+        margin-top: 20vw;
+    }
+
+    .top-ban__img-mobile {
+        display: block;
+        height: 60%;
+    }
+}
