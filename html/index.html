@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="../css/drop-style.css">
+    <link rel="stylesheet" href="../css/accardion_demo.css">
     <link rel="stylesheet" href="../css/style.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,8 +33,6 @@
                 <li><a href="#">Спецпредложения</a></li>
                 <li><a href="#">Как добраться</a></li>
                 <li><a href="#">Контакты</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -50,7 +50,7 @@
                     <button>Связаться</button>
                 </div>
                 <div class="bronirovanie">
-                    <!-- TODO Сюда надо вставить блок с бронированием -->
+
                 </div>
             </div>
             <img src="../img/banner-photo.jpg" alt="#" width="832px" height="592px">
@@ -62,7 +62,7 @@
                 </div>
                 <div class="container">
                     <p>
-                        <br>
+
                         <strong>Dot Space 84</strong> - самый высокий в мире капсульный отель, который находится на 84м
                         этаже
                         башни Федерация Восток. <br>
@@ -130,13 +130,13 @@
                                 текста для объема</div>
                         </div>
                         <!--? Закомментил третий элемент, т.к. 4 оч плхо смотрятся -->
-                        <!-- <div class="slider-element__specEvent">
+                        <div class="slider-element__specEvent">
                             <div class="img__specEvent">
                                 <img src="../img/defaultimg.jpg" width="206" height="230px" alt="#">
                             </div>
                             <div class="subTitle__specEvent">Примерное описание спецпредложения, ну и еще чуть чуть
                                 текста для объема</div>
-                        </div> -->
+                        </div>
 
                         <a href="#">
                             <img src="../img/arrow.svg" alt="#" class="right">
@@ -144,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="way">
+            <div class="way"> 
                 <div class="main__title">
                     <h3>Как добраться</h3>
                 </div>
@@ -164,10 +164,52 @@
                     </div>
                 </div>
             </div>
-            <div class="FAQ">
+            <div class="faq">
                 <div class="main__title">
-                    <!--TODO  Сюда надо вставить аккардион  -->
+                    <h3>Вопрос-ответ</h3>
                 </div>
+                    <div class="accordion-menu">
+                        <ul>
+                            <li>
+                                <input type="checkbox" checked />
+                                <i class="arrow"></i>
+                                <h2>Как к нам добраться?</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est quis quae dolor recusandae suscipit eum vitae soluta cupiditate perferendis? Maiores voluptate expedita, cumque id ab quae magni. Dolor, iusto!</p>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked />
+                                <i class="arrow"></i>
+                                <h2>Какие удобства есть в каждом номере?</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia dolore facere fugit, omnis minus asperiores quasi architecto nihil molestiae?
+                                </p>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked />
+                                <i class="arrow"></i>
+                                <h2>Что входит в завтрак?</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque expedita dolorum. Aperiam, saepe rerum, ut, alias consequatur mollitia animi iure voluptatem corrupti minima ipsum illum molestias cupiditate! Veritatis, architecto.
+                                </p>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked />
+                                <i class="arrow"></i>
+                                <h2>Время заезда и выезда</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque expedita dolorum. Aperiam, saepe rerum, ut, alias consequatur mollitia animi iure voluptatem corrupti minima ipsum illum molestias cupiditate! Veritatis, architecto.
+                                </p>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked />
+                                <i class="arrow"></i>
+                                <h2>Какие дополнительные услуги есть?</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque expedita dolorum. Aperiam, saepe rerum, ut, alias consequatur mollitia animi iure voluptatem corrupti minima ipsum illum molestias cupiditate! Veritatis, architecto.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
             </div>
 
             <footer class="footer">
